@@ -21,4 +21,15 @@ console.log(newString);
 const anotherString = gameName.slice(-8, 4)
 console.log(anotherString);
 
+const newStringOne = "  trupti  "
+console.log(newStringOne);
+console.log(newStringOne.trim());
+
+const url = "https://tupi.com/tupi%20ramanuj"
+
+console.log(url.replace('%20', '-'));
+
+console.log(url.includes('tupi'));
+
+console.log(gameName.split('-'));
 
