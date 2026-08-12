@@ -10,3 +10,17 @@ console.log(a);
 //console.log(b);
 console.log(c);
 
+function one() {
+    const username = "trupti"
+
+    function two() {
+        const website = "youtube"
+        console.log(username);
+    }
+    //console.log(website);
+    two()
+}
+//one()
+if (true) {
+
+}
