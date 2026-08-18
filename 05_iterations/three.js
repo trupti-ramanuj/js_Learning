@@ -14,3 +14,25 @@ for (const greet of greetings) {
 
 //Maps
 const map = new Map()
+map.set('IN',"India")
+map.set('USA',"United States of America")
+map.set('Fr',"France")
+
+console.log(map);
+
+for (const key of map){
+console.log(key);
+}
+for(const [key, value] of map){
+    console.log(key,':-',value);
+}
+
+const game={
+    'game1':'NFS',
+    'game2':'Spiderman'
+}
+
+for(const [key, value] in game){
+    console.log(key,':-',value);
+}
+    
