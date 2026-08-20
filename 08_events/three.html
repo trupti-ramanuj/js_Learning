@@ -8,22 +8,17 @@
 </head>
 
 <body>
-    <h1>Chai aur code</h1>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
+
 </body>
 <script>
-    const sayTrupti = function () {
-        console.log("Trupti")
+    const sayDate = function (str) {
+        console.log(str, Date.now())
     }
-    const changeText = function () {
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
-    const changeMe = setTimeout(changeText, 2000)
-
-    document.querySelector('#stop').addEventListener('click', function () {
-        clearTimeout(changeMe)
-        console.log("STOPPED")
-    })
+    const intervalId = setInterval(sayDate, 1000, "Ramanuj")
+    clearInterval(intervalId)
 
 </script>
 
