@@ -17,8 +17,20 @@
     const sayDate = function (str) {
         console.log(str, Date.now())
     }
-    const intervalId = setInterval(sayDate, 1000, "Ramanuj")
-    clearInterval(intervalId)
+    let intervalId
+
+    document.querySelector('#start').addEventListener('click', function () {
+        if (!intervalId) {
+            intervalId = setInterval(sayDate, 1000, "Ramanuj")
+            console.log("STARTED")
+        }
+    })
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(intervalId)
+        intervalId = null
+        console.log("STOPPED")
+    })
 
 </script>
 
